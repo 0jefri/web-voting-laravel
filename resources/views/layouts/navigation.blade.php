@@ -18,11 +18,14 @@
                     <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
                         {{ __('Data Mahasiswa') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                    <x-nav-link :href="route('candidate.index')" :active="request()->routeIs('candidate.index')">
                         {{ __('Data Calon Ketua Bem') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
-                        {{ __('Data Penilaian') }}
+                    <x-nav-link :href="route('pendaftaran.index')" :active="request()->routeIs('pendaftaran.index')">
+                        {{ __('Pendaftaran') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('voting.index')" :active="request()->routeIs('voting.index')">
+                        {{ __('Voting') }}
                     </x-nav-link>
                 </div>
             </div>
